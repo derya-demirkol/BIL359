@@ -51,7 +51,7 @@ DERYA DEMİRKOL - 23120808031
 #Bölüm 2: HTML ve CSS
 
 ## 1. Aşağıdaki HTML kodunun çıktısını tahmin ediniz:
-html
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -63,6 +63,7 @@ html
  <a href="https://www.google.com">Google'a git</a>
 </body>
 </html>
+```
 
 *Çıktı:*
 
@@ -71,26 +72,27 @@ Bu bir paragraf.
 Google'a git (renklidir ve tıklandığında Google’a yönlendirir.)
 
 
-## 2. <div> ve <span> etiketleri arasındaki farkı açıklayınız
-- *<div>:* Mantıksal bölüm oluşturur. Blok düzeyinde bir etikettir; kullanımından önce ve sonra yeni bir satır oluşturur. Örn. bir menü, başlık veya alt bilgi.
-- *<span>:* Blok içi küçük bir bölümü gruplandırır yani satır içi bir etikettir. Örn. cümle içinde bazı sözcüklerin kalın veya italik yazılarak vurgulanmasında kullanılır. 
+## 2. `<div>` ve `<span>` etiketleri arasındaki farkı açıklayınız
+- *`<div>`:* Mantıksal bölüm oluşturur. Blok düzeyinde bir etikettir; kullanımından önce ve sonra yeni bir satır oluşturur. Örn. bir menü, başlık veya alt bilgi.
+- *`<span>`:* Blok içi küçük bir bölümü gruplandırır yani satır içi bir etikettir. Örn. cümle içinde bazı sözcüklerin kalın veya italik yazılarak vurgulanmasında kullanılır. 
 
 ## 3. HTML’de form elemanlarından en az 5 tanesini açıklayınız.
-1. <input> – Kullanıcıdan tek satırlık veri girişi (metin, parola, e-posta vb.)  
-2. <select> – Açılır, seçim yapılabilir bir menü oluşturur.
-3. <option> – Açılır listede seçenek tanımlamak için kullanılır. 
-4. <button> – Tıklanabilir bir buton oluşturur. 
-5. <textarea> – Kullanıcıdan çok satırlı metin girişi (adres, mesaj, yorum vb.)
+1. `<input>` – Kullanıcıdan tek satırlık veri girişi (metin, parola, e-posta vb.)  
+2. `<select>` – Açılır, seçim yapılabilir bir menü oluşturur.
+3. `<option>` – Açılır listede seçenek tanımlamak için kullanılır. 
+4. `<button>` – Tıklanabilir bir buton oluşturur. 
+5. `<textarea>` – Kullanıcıdan çok satırlı metin girişi (adres, mesaj, yorum vb.)
 
 ## 4. CSS’te ID ve Class seçicilerinin farkı ve örnekleri
 ### 4.1 ID ve Class farkı
 - *ID (#)*: Sayfadaki spesifik bir elemana özel bir stil tanımlamak için kullanılır.
 - *Class (.)*: Aynı stil birden fazla elemana uygulanmak istenildiğinde kullanılır. 
 
-html
+```html
 <p id="ozel">ID örneği.</p>
 <p class="pembe">Class örneği.</p>
-
+```
+```css
 #ozel {
   color: blue;        /* sadece bu ID'ye sahip paragraf mavi olacak. */
   font-weight: bold;  /* yazı kalın görünecek. */
@@ -100,63 +102,62 @@ html
   color: hotpink;     /* bu class’a sahip tüm paragraflar pembe görünecek. */
   font-style: italic; /* yazı eğik olur. */
 }
-
+```
 
 ### 4.2
-css
+```css
 p {
  color: red;
  font-size: 16px;
 }
-
-*Cevap:* <p> paragraf etiketidir. İçine yazılan metin tarayıcı tarafından paragraf olarak algılanır. Bu kod sayfadaki tüm <p> elementlerine uygulanır; böylece tüm paragraflar kırmızı renkte ve 16px boyutunda görüntülenir.
+```
+*Cevap:* `<p>` paragraf etiketidir. İçine yazılan metin tarayıcı tarafından paragraf olarak algılanır. Bu kod sayfadaki tüm <p> elementlerine uygulanır; böylece tüm paragraflar kırmızı renkte ve 16px boyutunda görüntülenir.
 
 ## 5. HTML5’te yeni gelen en az 3 etiketi açıklayınız.
-1. <header> – Bir sayfa/bölüme başlık tanımlama
-2. <section> – Bir sayfa içeriğindeki ilişkili kısımları gruplama
-3. <footer> – Bir sayfa/bölümün alt bilgi kısmını tanımlama
+1. `<header>` – Bir sayfa/bölüme başlık tanımlama
+2. `<section>` – Bir sayfa içeriğindeki ilişkili kısımları gruplama
+3. `<footer>` – Bir sayfa/bölümün alt bilgi kısmını tanımlama
 
 ## 6. CSS Flexbox ile bir div öğesini yatay ve dikey olarak nasıl ortalarsınız?
-html
+```html
 <div class="container">
   <div class="box">Merkezdeki Kutu</div>
 </div>
-
-css
+```
+```css
 .container {
   display: flex;
   justify-content: center; /* yatay eksende ortalama */
   align-items: center;     /* dikey eksende ortalama */
   height: 100vh;
 }
-
+```
 
 ## 7. Responsive web tasarım nedir? Örnek bir CSS media query yazınız.
 Responsive web tasarım, sayfanın farklı ekran boyutlarında dinamik görünmesini sağlar.
 
-css
+```css
 body { font-size: 16px; }
 
 @media (max-width: 600px) {
   body { font-size: 13px; }
 }
-
+```
 
 ## 8. HTML tablolarında satır ve sütunları birleştirmek için hangi etiketler kullanılır?
-- rowspan: Satır birleştirir.
-- colspan: Sütun birleştirir.
+- `rowspan`: Satır birleştirir.
+- `colspan`: Sütun birleştirir.
 
-html
+```html
 <td rowspan="2">2 satırı kaplar</td>
 <td colspan="3">3 sütunu kaplar</td>
-
+```
 
 ## 9. CSS ile bir butona hover efekti nasıl eklenir? Örnek kod yazınız.
-html
+```html
 <button class="btn">Tıkla Beni</button>
-
-
-css
+```
+```css
 .btn {
   background-color:#9cd6c4;
   color: white;
@@ -169,6 +170,7 @@ css
   background-color:#28a745;
   transform: scale(1.05);
 }
+```
 
 #Bölüm 3: Ağ Protokolleri
 
